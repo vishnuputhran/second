@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio Website</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+
+    .nav-links li {
+      margin-left: 2rem;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff6347;
+    }
+
+    /* Hero Section */
+    #home {
+      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #home h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #home p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    #home button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      background-color: #ff6347;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    #home button:hover {
+      background-color: #333;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+
+    /* Services Section */
+    .services {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+    }
+
+    .service {
+      background-color: white;
+      padding: 2rem;
+      width: 30%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .service:hover {
+      transform: scale(1.05);
+    }
+
+    .service h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .service p {
+      font-size: 1.1rem;
+      color: #777;
+    }
+
+    /* Portfolio Section */
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .portfolio-item {
+      background-color: #eee;
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .portfolio-item:hover {
+      transform: scale(1.05);
+    }
+
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-item h3 {
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .portfolio-item p {
+      color: #777;
+      font-size: 1.1rem;
+    }
+
+    /* Contact Section */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      margin-bottom: 1rem;
+    }
+
+    .contact-form button {
+      padding: 1rem;
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: #ff6347;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>I'm a passionate web developer creating innovative solutions for the digital world.</p>
+    <button onclick="alert('Thank you for exploring my portfolio!')">Explore Now</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m a web developer with a love for creating beautiful, responsive websites. With years of experience in front-end and back-end technologies, I strive to deliver high-quality solutions that meet client needs.</p>
+    <p>This web page is developed by</p>
+     <button onclick="alert('I am Vishnuputhran R!')">Name</button>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>My Services</h2>
+    <p>Check out the services I offer to help you build your online presence.</p>
+    <div class="services">
+      <div class="service">
+        <h3>Web Design</h3>
+        <p>Creating visually appealing and user-friendly website designs.</p>
+      </div>
+      <div class="service">
+        <h3>Web Development</h3>
+        <p>Building responsive and dynamic websites using modern technologies.</p>
+      </div>
+      <div class="service">
+        <h3>SEO Optimization</h3>
+        <p>Improving your website’s search engine ranking and visibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <p>Take a look at some of the projects I’ve worked on.</p>
+    <div class="portfolio">
+      <div class="portfolio-item">
+        <img src="https://www.shutterstock.com/image-illustration/web-development-coding-concept-banner-260nw-1955634814.jpg" alt="Project 1">
+        <h3>Project One</h3>
+        <p>Full Stack development with a website</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://contentstatic.techgig.com/photo/81571178/how-to-become-a-full-stack-developer-in-2021.jpg?106588" alt="Project 2">
+        <h3>Project Two</h3>
+        <p>Responsive website for a local business.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="https://www.inexture.com/wp-content/uploads/2023/05/programming-background-with-person-working-with-codes-computer-2-scaled.jpg" alt="Project 3">
+        <h3>Project Three</h3>
+        <p>SEO optimization and digital marketing for a brand.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind or want to say hello? Fill out the form below!</p>
+    <form class="contact-form" id="contact-form">
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+      <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Form Submission -->
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for contacting me! I will get back to you shortly.');
+      document.getElementById('contact-form').reset();
+    });
+  </script>
+
+</body>
+</html>
+
